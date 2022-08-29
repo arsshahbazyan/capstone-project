@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		body {
+		background: #556270;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+	
+		}
+			
+		h1 {
+				font-family: "Arial Black", Gadget, sans-serif;
+				font-size: 400%;
+				letter-spacing: 4px;
+				color: #F0E68C;
+		}
+					
+		p {
+				color: #F4A460;
+		}
+					
+		.error {
+				color: red;
+		}
+	
+	</style>
+
+	
+<title>Library portal - home page</title>
+</head>
+<body>
+
+	<div class="container" style="margin-top: 30px;">
+		<div class="jumbotron">
+			<h1 class="display-4">Hello <security:authentication property="principal.username"/>! Welcome to our Library!</h1>
+			<br>
+			<div class="right">
+	  			<p class="lead">${quote.quote}</p>
+	  			<hr class="my-4">
+	  			<p>- ${quote.author}</p>
+  			</div>
+		</div>
+	</div>
+</body>
+</html>
